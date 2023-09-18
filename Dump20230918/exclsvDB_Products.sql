@@ -1,0 +1,59 @@
+CREATE DATABASE  IF NOT EXISTS `exclsvDB` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `exclsvDB`;
+-- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: exclsvDB
+-- ------------------------------------------------------
+-- Server version	8.0.33-0ubuntu0.22.04.2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Products`
+--
+
+DROP TABLE IF EXISTS `Products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Products` (
+  `product_id` int NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(255) NOT NULL,
+  `product_category` varchar(255) NOT NULL,
+  `product_gender` varchar(255) NOT NULL,
+  `product_image` varchar(255) NOT NULL,
+  `product_price` decimal(10,2) NOT NULL,
+  `product_rate` decimal(2,1) NOT NULL,
+  `product_rate_count` int DEFAULT '0',
+  PRIMARY KEY (`product_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=836990 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Products`
+--
+
+LOCK TABLES `Products` WRITE;
+/*!40000 ALTER TABLE `Products` DISABLE KEYS */;
+INSERT INTO `Products` VALUES (1,'EXCLSV White T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/1.png',59.99,0.5,1),(2,'EXCLSV Black Long sleeves T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/2.png',70.00,0.0,0),(3,'EXCLSV Grey T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/3.png',50.00,0.0,0),(4,'Long sleeves Baseball T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/4.png',80.00,0.0,0),(5,'White tight fit premium T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/5.png',75.00,0.0,0),(6,'EXCLSV Yellow T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/6.png',45.00,0.0,0),(7,'EXCLSV Red Polo-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/7.png',100.00,4.0,1),(8,'EXCLSV Black Om logo T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/8.png',60.00,0.0,0),(9,'EXCLSV Red T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/9.png',55.00,0.0,0),(10,'EXCLSV Blue premium T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/10.png',59.99,0.0,0),(11,'EXCLSV White Polo-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/11.png',100.00,0.0,0),(12,'EXCLSV Yellow T-shirt','tshirts','men','http://localhost:3000/images/products/men/tshirts/12.png',50.00,0.0,0),(13,'White Short-sleeves Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/0.png',125.00,5.0,1),(14,'Light blue Logn-sleeves Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/1.png',125.00,0.0,0),(15,'Light grey Long-sleeves Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/2.png',130.00,0.0,0),(16,'Light blue Long-sleeves checkered Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/3.png',125.00,0.0,0),(17,'Red and Blue Short-sleeves checkered Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/4.png',120.00,0.0,0),(18,'White Long-sleeves Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/5.png',150.00,0.0,0),(19,'Crimson Short-sleeves Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/6.png',130.00,0.0,0),(20,'Orange and blue Long-sleeves Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/7.png',120.00,0.0,0),(21,'Dark slate blue Long-sleeves Shirt','shirts','men','http://localhost:3000/images/products/men/shirts/8.png',200.00,0.0,0),(22,'Light grey Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/0.png',125.00,0.0,0),(23,'Black Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/1.png',125.00,0.0,0),(24,'Blue Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/2.png',125.00,0.0,0),(25,'Red Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/3.png',150.00,0.0,0),(26,'Black Logo Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/4.png',160.00,0.0,0),(27,'Black and White Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/5.png',150.00,0.0,0),(28,'Red and Grey Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/6.png',125.00,0.0,0),(29,'Grey South85 Hoodie','sweaters','men','http://localhost:3000/images/products/men/sweaters/7.png',130.00,0.0,0),(30,'Black and White striped Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/8.png',130.00,0.0,0),(31,'Yellow Sweater','sweaters','men','http://localhost:3000/images/products/men/sweaters/9.png',140.00,0.0,0),(32,'Grey Hoodie','sweaters','men','http://localhost:3000/images/products/men/sweaters/10.png',135.00,0.0,0),(33,'Leather Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/0.png',850.00,0.0,0),(34,'Green Hood Parka','jackets','men','http://localhost:3000/images/products/men/jackets/1.png',2000.00,0.0,0),(35,'Blue Jeans Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/2.png',700.00,0.0,0),(36,'Yellow Puffer Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/3.png',800.00,0.0,0),(37,'Black Jeans Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/4.png',600.00,0.0,0),(38,'Green Parka','jackets','men','http://localhost:3000/images/products/men/jackets/5.png',1500.00,0.0,0),(39,'Multi-color Puffer Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/6.png',1500.00,0.0,0),(40,'Blue Puffer Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/7.png',900.00,0.0,0),(41,'Red Windbreaker','jackets','men','http://localhost:3000/images/products/men/jackets/8.png',2000.00,0.0,0),(42,'Black Puffer Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/9.png',1000.00,0.0,0),(43,'Light Blue Sports Jacket','jackets','men','http://localhost:3000/images/products/men/jackets/10.png',1000.00,0.0,0),(44,'Grey Coat','jackets','men','http://localhost:3000/images/products/men/jackets/11.png',1500.00,0.0,0),(45,'Blue and Red summer Top','tshirts','women','http://localhost:3000/images/products/women/tshirts/0.png',90.00,0.0,0),(46,'Grey Baseball T-shirt','tshirts','women','http://localhost:3000/images/products/women/tshirts/1.png',50.00,0.0,0),(47,'Rocket logo Blue T-shirt','tshirts','women','http://localhost:3000/images/products/women/tshirts/2.png',25.00,0.0,0),(48,'Red Crop-Top','tshirts','women','http://localhost:3000/images/products/women/tshirts/3.png',65.00,0.0,0),(49,'EXCLSV Red V-neck T-shirt','tshirts','women','http://localhost:3000/images/products/women/tshirts/4.png',60.00,0.0,0),(50,'EXCLSV White V-neck T-shirt','tshirts','women','http://localhost:3000/images/products/women/tshirts/5.png',60.00,0.0,0),(51,'Green loose-fitting Shirt','tshirts','women','http://localhost:3000/images/products/women/tshirts/6.png',75.00,0.0,0),(52,'EXCLSV Red Crop-Top','tshirts','women','http://localhost:3000/images/products/women/tshirts/7.png',65.00,0.0,0),(53,'Pink Off Shoulder Crop-Top','tshirts','women','http://localhost:3000/images/products/women/tshirts/8.png',65.00,0.0,0),(54,'Purple Sport T-shirt','tshirts','women','http://localhost:3000/images/products/women/tshirts/9.png',60.00,0.0,0),(55,'Yellow and Pink Mid Dress','dress','women','http://localhost:3000/images/products/women/dresses/0.png',300.00,0.0,0),(56,'Pink Dress','dress','women','http://localhost:3000/images/products/women/dresses/1.png',250.00,4.5,1),(57,'Yellow Long Dress','dress','women','http://localhost:3000/images/products/women/dresses/2.png',350.00,0.0,0),(58,'Red Long Dress','dress','women','http://localhost:3000/images/products/women/dresses/3.png',500.00,5.0,1),(59,'Red Short Dress','dress','women','http://localhost:3000/images/products/women/dresses/4.png',235.00,0.0,0),(60,'Red Medium Dress','dress','women','http://localhost:3000/images/products/women/dresses/5.png',270.00,0.0,0),(61,'Yellow Sweater','sweaters','women','http://localhost:3000/images/products/women/sweaters/0.png',150.00,0.0,0),(62,'Orange Zip-up Hoodie','sweaters','women','http://localhost:3000/images/products/women/sweaters/1.png',180.00,0.0,0),(63,'Black Loose Sweater','sweaters','women','http://localhost:3000/images/products/women/sweaters/2.png',160.00,0.0,0),(64,'Red Knit Sweater','sweaters','women','http://localhost:3000/images/products/women/sweaters/3.png',165.00,0.0,0),(65,'Grey Short Turtle-neck Sweater','sweaters','women','http://localhost:3000/images/products/women/sweaters/4.png',180.00,0.0,0),(66,'Beige Long Turtle-neck Sweater','sweaters','women','http://localhost:3000/images/products/women/sweaters/5.png',170.00,0.0,0),(67,'Brown Hoodie','sweaters','women','http://localhost:3000/images/products/women/sweaters/6.png',180.00,0.0,0),(68,'Red Hoodie','sweaters','women','http://localhost:3000/images/products/women/sweaters/7.png',250.00,0.0,0),(69,'Black Flower print Sweater','sweaters','women','http://localhost:3000/images/products/women/sweaters/8.png',155.00,0.0,0),(70,'Orange Sports Jacket','jackets','women','http://localhost:3000/images/products/women/jackets/0.png',1500.00,0.0,0),(71,'Blue Coat','jackets','women','http://localhost:3000/images/products/women/jackets/1.png',3500.00,0.0,0),(72,'Beige Coat','jackets','women','http://localhost:3000/images/products/women/jackets/2.png',2000.00,0.0,0),(73,'Light Blue Jeans Jacket','jackets','women','http://localhost:3000/images/products/women/jackets/3.png',350.00,0.0,0),(74,'Red Coat','jackets','women','http://localhost:3000/images/products/women/jackets/4.png',3000.00,0.0,0),(75,'White Windbreaker','jackets','women','http://localhost:3000/images/products/women/jackets/5.png',2500.00,0.0,0),(76,'Light Orange Puffer Jacket','jackets','women','http://localhost:3000/images/products/women/jackets/6.png',2650.00,0.0,0),(77,'Yellow Coat','jackets','women','http://localhost:3000/images/products/women/jackets/7.png',1000.00,0.0,0),(78,'Black Parka','jackets','women','http://localhost:3000/images/products/women/jackets/8.png',1500.00,0.0,0),(79,'White Hood Parka','jackets','women','http://localhost:3000/images/products/women/jackets/9.png',1800.00,0.0,0),(80,'Green Fluffy Parka','jackets','women','http://localhost:3000/images/products/women/jackets/10.png',500.00,0.0,0);
+/*!40000 ALTER TABLE `Products` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-09-18 20:44:34
